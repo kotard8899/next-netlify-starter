@@ -16,7 +16,7 @@ export async function getServerSideProps({ query }) {
   // Fetch data from external API
   const res = await fetch(`https://api.artion.io/info/getcollections`)
   const data = await res.json()
-  // console.log(query)
+  console.log(query)
   // Pass data to the page via props
   return { props: { data, query } }
 }
